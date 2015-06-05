@@ -25,9 +25,5 @@ LOCAL_SRC_FILES := \
     $(call all-java-files-under, $(common)) \
     $(call all-java-files-under, $(src_files))
 
-LOCAL_STATIC_LIBRARIES := libcurve25519-donna libcurve25519
-LOCAL_ADDITIONAL_DEPENDENCIES += libcurve25519
-
 include $(BUILD_STATIC_JAVA_LIBRARY)
 
-include $(call first-makefiles-under, $(LOCAL_PATH))
